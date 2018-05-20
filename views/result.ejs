@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document-结果页面</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">约数计算器</a>
+                  </div>
+                </div><!-- /.container-fluid -->
+              </nav>
+              <div class="container">
+                  <div class="row">
+                      <h2>结果页面(本次耗时<%= during %>)</h2>
+                      <p>
+                          数字<%= number %>的因数如下：
+                      </p>
+                      <ul>
+                          <%
+                            for(var i=0;i<result.length;i++){
+                                %>
+                                      <li>
+                                          <%= result[i] %>
+                                      </li>
+                                      
+                                      
+                                <% }%>
+                      </ul>
+                      
+                      
+                    
+                  </div>
+              </div>
+              <script src="js/jquery-2.2.4.min.js"></script>
+              <script>
+                 
+              </script>
+</body>
+</html>
